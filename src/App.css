@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+@font-face {
+  font-family:"Switzer" ;
+  src: local("Switzer") 
+  url("../public/Switzer/Switzer-Light.ttf"),
+  format("truetype");
+}
+@font-face {
+  font-family:"GeneralSans" ;
+  src:local("GeneralSans")  
+  url("../public/GeneralSans/GeneralSans-Bold.ttf"), 
+  format("truetype");
+}
+
+h1{
+ font-size: xx-large;
+ font-family: "Switzer";
+}
+
+p{
+  font-family: "GeneralSans";
+ }
+ html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
